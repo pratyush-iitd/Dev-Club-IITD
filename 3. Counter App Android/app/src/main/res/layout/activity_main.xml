@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background"
+    android:scaleType="centerCrop"
+    tools:context="com.example.pratyush.counterapp.MainActivity">
+
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:numStars="5"
+        android:rating="4"
+        android:stepSize="0.5" />
+
+
+    <TextView
+        android:id="@+id/counterTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:padding="0dp"
+        android:textSize="120sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/counterTxt"
+        android:orientation="horizontal"
+        android:layout_marginTop="80dp">
+
+        <Button
+            android:id="@+id/minusBtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circlebtn"
+            android:textColor="#FFFFFF"
+            android:text="-"
+            android:textSize="50sp"/>
+
+        <Button
+            android:id="@+id/resetBtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/retrybtn"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingTop="29dp"/>
+
+        <Button
+            android:id="@+id/plusBtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circlebtn"
+            android:textColor="#FFFFFF"
+            android:text="+"
+            android:textSize="50sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\u00a9 2017, Pratyush Pandey"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="10dp"
+        android:padding="3dp"
+
+        android:textSize="15sp" />
+
+
+</RelativeLayout>
